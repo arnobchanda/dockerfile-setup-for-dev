@@ -5,8 +5,8 @@ services:
       dockerfile: Dockerfile
     container_name: revx-dev-container
     volumes:
-      - ~/Dev/revx/:/home/revx/dev:rw
-      - ~/.ssh:/home/revx/.ssh:ro
+      - ~/Dev/revx/:/home/overlord/Dev:rw
+      - ~/.ssh:/home/overlord/.ssh:ro
     restart: always
     tty: true
     stdin_open: true
