@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: revx-dev-container
+    hostname: dev-container
     volumes:
       - ~/Dev/revx/:/home/overlord/Dev:rw
       - ~/.ssh:/home/overlord/.ssh:ro
