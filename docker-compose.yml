@@ -8,6 +8,8 @@ services:
     volumes:
       - ~/Dev/revx/:/home/overlord/Dev:rw
       - ~/.ssh:/home/overlord/.ssh:ro
+      - ./nvim_config:/home/overlord/.config/nvim
+      - ./../../../.config/omarchy/current/theme/neovim.lua:/home/overlord/.config/nvim/lua/plugins/theme.lua:ro
     restart: always
     tty: true
     stdin_open: true
